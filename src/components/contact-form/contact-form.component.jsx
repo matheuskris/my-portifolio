@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/esm/Container";
@@ -14,10 +15,25 @@ const ContactForm = () => {
 
   const onSubmit = async (values, actions) => {
     setButtonText("Sent");
-    await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     setButtonText("Send");
-    console.log(values);
+
+    emailjs
+      .send(
+        "gmailMessagePortifolio",
+        "template_93v0tkp",
+        values,
+        "KIg8OdWDu0J3xWIcr"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+      });
   };
 
   const {
@@ -48,7 +64,9 @@ const ContactForm = () => {
             <img src={contactImg} alt="opa" />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <h2>
+              Get In Touch <span>(sim, funciona)</span>
+            </h2>
             <form autoComplete="off" onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">

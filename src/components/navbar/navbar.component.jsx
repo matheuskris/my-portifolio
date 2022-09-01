@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 // import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
-import navIcon2 from "../../assets/img/nav-icon2.svg";
+import githubIcon from "../../assets/img/github-icon.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 import "./navbar.styles.scss";
@@ -77,10 +77,10 @@ const Navigation = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/matheuskris/">
-                <img src={navIcon1} alt="navIcon1" />
+                <img src={navIcon1} alt="Linked In Icon" />
               </a>
-              <a href="https://www.linkedin.com/in/matheuskris/">
-                <img src={navIcon2} alt="navIcon2" />
+              <a href="https://github.com/matheuskris">
+                <img src={githubIcon} alt="git hub icon" />
               </a>
               <a href="https://www.linkedin.com/in/matheuskris/">
                 <img src={navIcon3} alt="navIcon3" />

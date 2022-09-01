@@ -4,7 +4,7 @@ import Col from "react-bootstrap/esm/Col";
 
 import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
-import navIcon2 from "../../assets/img/nav-icon2.svg";
+import githubIcon from "../../assets/img/github-icon.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 import "./footer.styles.scss";
@@ -22,8 +22,8 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/matheuskris/">
                 <img src={navIcon1} alt="Icon" />
               </a>
-              <a href="https://www.linkedin.com/in/matheuskris/">
-                <img src={navIcon2} alt="Icon" />
+              <a href="https://github.com/matheuskris">
+                <img src={githubIcon} alt="Icon" />
               </a>
               <a href="https://www.linkedin.com/in/matheuskris/">
                 <img src={navIcon3} alt="Icon" />
