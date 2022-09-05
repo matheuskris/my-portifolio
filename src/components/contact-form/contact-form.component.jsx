@@ -7,6 +7,7 @@ import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col";
 import { basicSchema } from "../../utils/basic.schema";
 import contactImg from "../../assets/img/contact-img.svg";
+import rover from "../../assets/img/Rover.png";
 
 import "./contact-form.styles.scss";
 
@@ -61,7 +62,7 @@ const ContactForm = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <img src={contactImg} alt="opa" />
+            <img src={rover} alt="opa" />
           </Col>
           <Col md={6}>
             <h2>

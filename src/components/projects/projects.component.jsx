@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
+import krisClothing from "../../assets/img/kris-clothing.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -16,34 +17,41 @@ import "./projects.styles.scss";
 
 const projects = [
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
+    title: "Kris Clothing",
+    description:
+      "Clothing Store, build in React with react-router, react-redux with data deployed in Firestore",
+    imgUrl: krisClothing,
+    siteUrl: "https://krisclothing.netlify.app/",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    siteUrl: "",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    siteUrl: "",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg1,
+    siteUrl: "",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    siteUrl: "",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    siteUrl: "",
   },
 ];
 

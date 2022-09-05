@@ -1,8 +1,14 @@
 .proj-imgbox {
+  height: 90%;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+
+  img {
+    height: 100%;
+  }
+
   &::before {
     content: "";
     background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -17,6 +23,7 @@
   }
 
   .proj-text {
+    color: white;
     position: absolute;
     text-align: center;
     top: 65%;

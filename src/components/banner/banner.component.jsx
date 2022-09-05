@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 import headerImg from "../../assets/img/header-img.svg";
+import planet from "../../assets/img/planet-banner.png";
 
 import "./banner.styles.scss";
 
@@ -68,7 +69,7 @@ const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            <img src={planet} alt="Header Img" />
           </Col>
         </Row>
       </Container>

@@ -56,25 +56,25 @@ const Skills = () => {
                     src={meter1}
                     alt="graphic of knowledge in Web Development"
                   />
-                  <h5>Web Development</h5>
+                  <h5>html</h5>
                 </div>
                 <div className="item">
                   <img
                     src={meter2}
                     alt="graphic of knowledge in Brand Identity"
                   />
-                  <h5>Brand Identity</h5>
+                  <h5>css</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="graphic of knowledge in Logo Design" />
-                  <h5>Logo Design</h5>
+                  <h5>javaScript</h5>
                 </div>
                 <div className="item">
                   <img
                     src={meter1}
                     alt="graphic of knowledge in Web Development"
                   />
-                  <h5>Web Development</h5>
+                  <h5>React</h5>
                 </div>
               </Carousel>
             </div>
