@@ -27,9 +27,16 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
-    .item img {
-      width: 50%;
-      margin: 0 auto 15px auto;
+    li {
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      background-color: #151515;
+      img {
+        width: 50%;
+        margin: 0 auto 15px auto;
+      }
     }
   }
 

@@ -1,9 +1,13 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
+import _CSS from "../../assets/img/skills-icons/CSS.png";
+import _HTML from "../../assets/img/skills-icons/HTML.png";
+import _JS from "../../assets/img/skills-icons/JS.png";
+import _NEXT from "../../assets/img/skills-icons/Next.png";
+import _REACTJS from "../../assets/img/skills-icons/ReactJS.png";
+import _TAILWIND from "../../assets/img/skills-icons/Tailwind.png";
+import _TS from "../../assets/img/skills-icons/TypeScript.png";
 import colorSharp from "../../assets/img/color-sharp.png";
 
 import Container from "react-bootstrap/Container";
@@ -14,7 +18,6 @@ import "./skills.styles.scss";
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -39,12 +42,9 @@ const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>skills</h2>
+              <h2>Conhecimento Técnico</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Delectus aut nesciunt tempore repellendus ipsam deleniti
-                voluptatibus magni ipsum? Aspernatur laboriosam dicta fugit vel
-                voluptatem non veritatis illo dignissimos commodi porro?
+                Um pouco das linguagens e frameworks que mais tenho estudado!
               </p>
               <Carousel
                 responsive={responsive}
@@ -52,29 +52,28 @@ const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img
-                    src={meter1}
-                    alt="graphic of knowledge in Web Development"
-                  />
+                  <img src={_HTML} alt="Html logo" />
                   <h5>html</h5>
                 </div>
                 <div className="item">
-                  <img
-                    src={meter2}
-                    alt="graphic of knowledge in Brand Identity"
-                  />
+                  <img src={_CSS} alt="Css logo" />
                   <h5>css</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="graphic of knowledge in Logo Design" />
+                  <img src={_JS} alt="javascript logo" />
                   <h5>javaScript</h5>
                 </div>
                 <div className="item">
-                  <img
-                    src={meter1}
-                    alt="graphic of knowledge in Web Development"
-                  />
-                  <h5>React</h5>
+                  <img src={_TS} alt="TypeScript logo" />
+                  <h5>Typescript</h5>
+                </div>
+                <div className="item">
+                  <img src={_REACTJS} alt="ReactJs logo" />
+                  <h5>ReactJS</h5>
+                </div>
+                <div className="item">
+                  <img src={_NEXT} alt="NextJS logo" />
+                  <h5>NextJS</h5>
                 </div>
               </Carousel>
             </div>
