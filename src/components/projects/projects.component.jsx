@@ -4,10 +4,8 @@ import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 
-import projImg1 from "../../assets/img/project-img1.png";
-import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.png";
 import krisClothing from "../../assets/img/kris-clothing.png";
+import HelpDesk from "../../assets/img/helpdesk.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -24,34 +22,11 @@ const projects = [
     siteUrl: "https://krisclothing.netlify.app/",
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
-    siteUrl: "",
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
-    siteUrl: "",
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
-    siteUrl: "",
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
-    siteUrl: "",
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
-    siteUrl: "",
+    title: "HelpDesk",
+    description:
+      "Call answering system build with Next-Js, react-redux, next-api using realTime database from google",
+    imgUrl: HelpDesk,
+    siteUrl: "https://helpdesk-gilt.vercel.app/",
   },
 ];
 
