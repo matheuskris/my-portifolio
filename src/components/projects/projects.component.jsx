@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 
 import krisClothing from "../../assets/img/kris-clothing.png";
 import HelpDesk from "../../assets/img/helpdesk.png";
+import HiSocial from "../../assets/img/HiSocial.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -27,6 +28,13 @@ const projects = [
       "Call answering system build with Next-Js, react-redux, next-api using realTime database from google",
     imgUrl: HelpDesk,
     siteUrl: "https://helpdesk-gilt.vercel.app/",
+  },
+  {
+    title: "HiSocial",
+    description:
+      "Social Media using MERNG stack - MongoDB, Express, Node, React and GraphQL",
+    imgUrl: HiSocial,
+    siteUrl: "https://hisocial.netlify.app/",
   },
 ];
 

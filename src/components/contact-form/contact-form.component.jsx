@@ -82,7 +82,7 @@ const ContactForm = () => {
                       errors.firstName && touched.firstName ? "input-error" : ""
                     }
                   />
-                  {errors.firstName && (
+                  {errors.firstName && touched.firstName && (
                     <p className="error">{errors.firstName}</p>
                   )}
                 </Col>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                       errors.lastName && touched.lastName ? "input-error" : ""
                     }
                   />
-                  {errors.lastName && (
+                  {errors.lastName && touched.lastName && (
                     <p className="error">{errors.lastName}</p>
                   )}
                 </Col>
@@ -114,7 +114,9 @@ const ContactForm = () => {
                       errors.email && touched.email ? "input-error" : ""
                     }
                   />
-                  {errors.email && <p className="error">{errors.email}</p>}
+                  {errors.email && touched.email && (
+                    <p className="error">{errors.email}</p>
+                  )}
                 </Col>
                 <Col sm={6} className="px-1">
                   <input
@@ -124,7 +126,9 @@ const ContactForm = () => {
                     value={values.phone}
                     type="tel"
                     placeholder="phone number"
-                    className={errors.phone ? "input-error" : ""}
+                    className={
+                      errors.phone && touched.phone ? "input-error" : ""
+                    }
                   />
                   {errors.phone && touched.phone && (
                     <p className="error">{errors.phone}</p>
@@ -144,7 +148,9 @@ const ContactForm = () => {
                       errors.message && touched.message ? "input-error" : ""
                     }
                   ></textarea>
-                  {errors.message && <p className="error">{errors.message}</p>}
+                  {errors.message && touched.message && (
+                    <p className="error">{errors.message}</p>
+                  )}
                   <button disabled={isSubmitting} type="submit">
                     <span>{buttonText}</span>
                   </button>
