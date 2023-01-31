@@ -7,6 +7,8 @@ import Nav from "react-bootstrap/Nav";
 import krisClothing from "../../assets/img/kris-clothing.png";
 import HelpDesk from "../../assets/img/helpdesk.png";
 import HiSocial from "../../assets/img/HiSocial.png";
+import DoctorCare from "../../assets/img/Doctor Care.png";
+import LetsFood from "../../assets/img/letsFood.png";
 
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -36,6 +38,19 @@ const projects = [
     imgUrl: HiSocial,
     siteUrl: "https://hisocial.netlify.app/",
   },
+  {
+    title: "DoctorCare",
+    description: "Single Page aplication with Html, Css and pure Javascript",
+    imgUrl: DoctorCare,
+    siteUrl: "https://krisdoctor.netlify.app/",
+  },
+  {
+    title: "Lets Food",
+    description:
+      "Single Page aplication using NextJS and the best practices of TailwindCSS for styling",
+    imgUrl: LetsFood,
+    siteUrl: "https://lets-food-8ei9hx0gl-matheuskris.vercel.app/",
+  },
 ];
 
 const Projects = () => {
@@ -44,12 +59,12 @@ const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <h2>Projetos</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              quo aliquam tempore sequi adipisci? Quis reprehenderit vel tenetur
-              assumenda architecto, expedita eaque velit, voluptates suscipit
-              iste dignissimos tempora. Placeat, ducimus.
+              Aqui estão alguns dos meus projetos pessoais que desenvolvi, e um
+              resumo das tecnologias utilizadas. A maior parte foi feita apenas
+              com o intuito de aprender tecnologias novas, porém alguns foram
+              feitos sob demanda externa para uso profissional.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -59,9 +74,9 @@ const Projects = () => {
               >
                 <Nav.Item>
                   <Nav.Link id="firstProjectTab" eventKey="first">
-                    Tab one
+                    Seção 1
                   </Nav.Link>
-                </Nav.Item>
+                  {/* </Nav.Item>
                 <Nav.Item>
                   <Nav.Link id="secondProjectTab" eventKey="second">
                     Tab two
@@ -70,7 +85,7 @@ const Projects = () => {
                 <Nav.Item>
                   <Nav.Link id="thirdProjectTab" eventKey="third">
                     Tab three
-                  </Nav.Link>
+                  </Nav.Link> */}
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -81,7 +96,7 @@ const Projects = () => {
                     ))}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
+                {/* <Tab.Pane eventKey="second">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Animi corrupti esse reprehenderit, optio ullam soluta
                   aspernatur veniam. Delectus architecto quo quod. Dolore ut
@@ -92,7 +107,7 @@ const Projects = () => {
                   Adipisci repudiandae pariatur ratione consequatur nisi
                   necessitatibus? Blanditiis ad porro neque, maxime, animi, cum
                   aliquid quaerat cupiditate possimus veniam atque dolor rem.
-                </Tab.Pane>
+                </Tab.Pane> */}
               </Tab.Content>
             </Tab.Container>
           </Col>

@@ -65,9 +65,7 @@ const ContactForm = () => {
             <img src={rover} alt="opa" />
           </Col>
           <Col md={6}>
-            <h2>
-              Get In Touch <span>(sim, funciona)</span>
-            </h2>
+            <h2>Get In Touch</h2>
             <form autoComplete="off" onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
